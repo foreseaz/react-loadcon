@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/local/bin/node /Users/Foresea/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/Foresea/.npm-packages/bin:/Users/Foresea/.rbenv/shims:/Users/Foresea/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/Foresea/bin:/Users/Foresea/.yarn/bin:/Users/Foresea/go/bin:/usr/local/go/bin
+
+Yarn version: 
+  0.24.6
+
+Node version: 
+  11.6.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "react-loadcon-example",
+    "homepage": "https://foreseaz.github.io/react-loadcon",
+    "version": "0.0.0",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+      "prop-types": "^15.6.2",
+      "react": "^16.4.1",
+      "react-dom": "^16.4.1",
+      "react-scripts": "^1.1.4",
+      "react-loadcon": "link:../dist/index.es.js"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-loadcon: Not found
+      at Request.params.callback [as _callback] (/Users/Foresea/.yarn/lib/yarn-cli.js:56255:18)
+      at Request.self.callback (/Users/Foresea/.yarn/lib/yarn-cli.js:107854:22)
+      at Request.emit (events.js:188:13)
+      at Request.<anonymous> (/Users/Foresea/.yarn/lib/yarn-cli.js:108837:10)
+      at Request.emit (events.js:188:13)
+      at IncomingMessage.<anonymous> (/Users/Foresea/.yarn/lib/yarn-cli.js:108757:12)
+      at Object.onceWrapper (events.js:276:13)
+      at IncomingMessage.emit (events.js:193:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process.internalTickCallback (internal/process/next_tick.js:72:19)
