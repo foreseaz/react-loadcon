@@ -5445,6 +5445,12 @@ react-is@^16.8.1:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
 
+react-loadcon@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-loadcon/-/react-loadcon-0.1.0.tgz#9cafaf8e568fcfd1e8fa103adb3324fea0b6b9b8"
+  dependencies:
+    react-fast-compare "^2.0.4"
+
 react-scripts@^1.1.4:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.5.tgz#3041610ab0826736b52197711a4c4e3756e97768"

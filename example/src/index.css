@@ -1,5 +1,104 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff7e5;
+}
+::selection {
+  background-color: #79FFE1;
+  color: #000;
+}
+.container {
+  width: 960px;
+  padding: 50px 100px;
+  margin: 0 auto;
+}
+.nav {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .title {
+  /* color: #bf2f4c; */
+  font-weight: 600;
+  font-size: 40px;
+}
+.select-wrapper {
+  padding: 0;
+  margin-left: 10px;
+  transform: translateY(10px);
+  display: inline-block;
+  border: 1px solid #bf2f4c;
+  border-radius: 5px;
+  width: 80px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+}
+.select-wrapper select {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #bf2f4c;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: #fff;
+  background-image: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.select-wrapper select:focus {
+  outline: none;
+}
+
+.btns {
+  padding: 50px 0 30px;
+}
+button {
+  align-items: center;
+  color: #fff;
+  height: 40px;
+  width: 175px;
+  font-size: 12px;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  font-weight: 100;
+  position: relative;
+  white-space: nowrap;
+  line-height: 0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  background: rgb(0, 122, 255);
+  padding: 0px 25px;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 122, 255);
+  border-image: initial;
+  overflow: hidden;
+  transition: all 0.15s ease 0s;
+  border-radius: 5px;
+}
+button.success {
+  background: #25c639;
+  border-color: #25c639;
+}
+button.error {
+  background: #ff564e;
+  border-color: #ff564e;
+}
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 7px 20px;
+  transform: translateY(-1px);
+}
+button + button {
+  margin-left: 15px;
+}
+.star {
+  margin-top: 100px;
 }
