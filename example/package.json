@@ -9,7 +9,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-loadcon": "^0.1.0",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "react-syntax-highlighter": "^10.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
