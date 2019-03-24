@@ -107,3 +107,15 @@ button + button {
   color: #aaa;
   font-size: 12px;
 }
+.markdown {
+  font-family: sans-serif;
+}
+.markdown li {
+  line-height: 1.4em;
+}
+.markdown code {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1px 5px;
+  border-radius: 5px;
+}

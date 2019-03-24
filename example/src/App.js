@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import ReactMarkdown from 'react-markdown'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
@@ -114,6 +115,18 @@ export default class App extends Component {
   }\
   `
 
+  propsExplain = () => `\
+  ## Props
+
+  - \`percentage: PropTypes.number.isRequired\`, the percentage of loading progress for LoadCon.
+  - \`type: PropTypes.oneOf(['pie', 'donut'])\`, the theme of LoadCon, now has \`PieCon\` and \`DonutCon\`, and more themes will be added soon.
+  - \`status: PropTypes.oneOf(['normal', 'active', 'exception', 'success'])\`, load status of LoadCon, \`normal\` reset to default favicon, \`active\` set LoadCon according to the type prop, \`exception\` set ErrorCon and \`success\` set SuccessCon.
+  - \`color: PropTypes.string\`, color of loading indicator in hash format, default is \`#25c639\`.
+  - \`background: PropTypes.string\`, color of background in hash format, default is \`#eeeeee\`.
+  - \`shadow: PropTypes.string\`, color of 2 pixals border in hash format, default is \`#ffffff\`.
+  - \`donutWidth: PropTypes.number\`, width of DonutCon indicator in number, default is \`8px\`.
+  `
+
   render () {
     return (
       <main className='container'>
@@ -172,6 +185,10 @@ export default class App extends Component {
             >
               {this.normalDoc()}
             </SyntaxHighlighter>
+          </div>
+
+          <div className='markdown'>
+            <ReactMarkdown source={this.propsExplain()} />
           </div>
         </div>
 
