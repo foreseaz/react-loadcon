@@ -1,6 +1,6 @@
 {
   "name": "react-loadcon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component for manipulating the favicon, for loading or progress.",
   "author": "foreseaz",
   "license": "MIT",

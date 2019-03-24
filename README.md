@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-loadcon.svg)](https://www.npmjs.com/package/react-loadcon) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![](imgs/intro.png)
+
 ## Install
 
 ```bash
