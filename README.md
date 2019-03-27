@@ -1,16 +1,23 @@
 # react-loadcon
 
-> React component to manipulate the favicon, for loading or progress.
+> React component to manipulate the favicon, as a loading or progress indicator, for now. The idea of "Favicon as DOM" is under construction.
 
 [![NPM](https://img.shields.io/npm/v/react-loadcon.svg)](https://www.npmjs.com/package/react-loadcon) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![](imgs/intro.png)
 
-## Demo 
+## Why bother?
 
-[🤗Here](https://foreseaz.github.io/react-loadcon/)
+When it comes to a huge file loading or download in a tab, a tiny progress indicator on favicon could be an interesting but also considerate UX experience. The idea comes from a long time ago and has been realized by so many open-source developers, and it comes back to me when try to solve this [good first issue](https://github.com/mozilla/send/issues/803) for the Mozilla Send.
 
-## Install
+So here is React-LoadCon for React community, now this tiny project can only use canvas to draw dynamic images and replace the <meta favicon /> tag, which is extremely tedious, but it plans to be a more general tool to offer `Favicon as DOM`. [dom-to-img](https://github.com/tsayen/dom-to-image) could be introduced to simplify the covert process.
+
+[Live Demo Here](https://foreseaz.github.io/react-loadcon/)
+
+And if you find the idea interesting, [![Join the favicon community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/favicon)
+
+
+## 🚀 Installation
 
 ```bash
 npm install --save react-loadcon
@@ -20,17 +27,9 @@ or
 yarn add react-loadcon
 ```
 
-## Props
+## 🖲 Usage
 
-- `percentage: PropTypes.number.isRequired`, the percentage of loading progress for LoadCon.
-- `type: PropTypes.oneOf(['pie', 'donut'])`, the theme of LoadCon, now has `PieCon` and `DonutCon`, and more themes will be added soon.
-- `status: PropTypes.oneOf(['normal', 'active', 'exception', 'success'])`, load status of LoadCon, `normal` reset to default favicon, `active` set LoadCon according to the type prop, `exception` set ErrorCon and `success` set SuccessCon.
-- `color: PropTypes.string`, color of loading indicator in hash format, default is `#25c639`.
-- `background: PropTypes.string`, color of background in hash format, default is `#eeeeee`.
-- `shadow: PropTypes.string`, color of 2 pixals border in hash format, default is `#ffffff`.
-- `donutWidth: PropTypes.number`, width of DonutCon indicator in number, default is `8px`.
-
-## Usage
+Add `<LoadCon />` in any component, it will render the loading favicon according to the status. Feel free to use it with your Server-Side Rendering Components, since LoadCon would only trigger after `componentDidMount`.
 
 ```JavaScript
   import React, { Component } from 'react'
@@ -81,6 +80,19 @@ yarn add react-loadcon
   }
 ```
 
-## License
+## 🧬 Props
+
+OPTION | TYPE | DEFAULT | DESCRIPTION
+------ | ---- | ------- | -----------
+percentage | `number` |  `0` | the percentage of loading progress for LoadCon
+type | `oneOf(['pie', 'donut'])` | `pie` | the theme of LoadCon, now has `PieCon` and `DonutCon`, and more themes will be added soon
+status | `oneOf(['normal', 'active', 'exception', 'success'])` | `normal` | load status of LoadCon, `normal` reset to default favicon, `active` set LoadCon according to the type prop, `exception` set ErrorCon and `success` set SuccessCon.
+color | `string` | ![](https://placehold.it/15/25c639/000000?text=+) `#25c639` | color of loading indicator in hash format.
+background | `string` | ![](https://placehold.it/15/eee/000000?text=+) `#eee` | color of background in hash format.
+shadow | `string` | ![](https://placehold.it/15/fff/000000?text=+) `#fff` | color of 2 pixals border in hash format
+donutWidth | `number` | `8` | width of DonutCon indicator.
+
+
+## 📝 License
 
 MIT © [foreseaz](https://github.com/foreseaz)
