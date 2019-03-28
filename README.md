@@ -29,7 +29,13 @@ yarn add react-loadcon
 
 ## 🖲 Usage
 
-Add `<LoadCon />` in any component, it will render the loading favicon according to the status. Feel free to use it with your Server-Side Rendering Components, since LoadCon would only trigger after `componentDidMount`.
+Put `<LoadCon />` anywhere, even in your SSR components (LoadCon would only trigger after `componentDidMount`).
+
+```JavaScript
+  <LoadCon percentage={this.state.percentage} />
+```
+
+Full example with async function, and show `Success` or `Exception` afterwards.
 
 ```JavaScript
   import React, { Component } from 'react'
